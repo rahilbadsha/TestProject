@@ -6,6 +6,8 @@ import java.time.LocalTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.HashMap;
+import java.util.Map;
 
 public class TimeApiTest {
 
@@ -29,6 +31,13 @@ public class TimeApiTest {
 	
 	LocalDate date2= LocalDate.parse("Saturday, Jul 14, 2018 14:31:06 PM", DateTimeFormatter.ofPattern("EEEE, MMM dd, yyyy HH:mm:ss a"));
 	System.out.println(date2);
+	Map<String, Integer>productPriceMap=new HashMap<>();
+	productPriceMap.getOrDefault("Fish", 1);
+	
+	var productPrice = new HashMap<String, Double>();
+	
+	var t=67;
+	System.out.println(t);
 
 	}
 
